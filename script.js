@@ -1,24 +1,22 @@
-//  UI variable
-const navToggler = document.querySelector('.nav-toggler');
-const navMenu = document.querySelector('.site-navbar ul');
-const navLinks = document.querySelectorAll('.site-navbar a');
+$(document).ready(function () {
+  $(window).scroll(function () {
+    // sticky navbar
+    if (this.scrollY > 20) {
+      $('.navbar').addClass("sticky");
+    } else {
+      $('.navbar').removeClass("sticky");
+    }
+  });
 
-// load event listners
-allEventListners();
+  $('.navbar .menu li a').click(function () {
+    // smooth scroll
+    $('html').css("scrollBehavior", "smooth");
+  });
 
-// functions 
-function allEventListners() {
-  navToggler.addEventListener('click', togglerClick);
-  navLinks.forEach( elem => elem.addEventListener('click', navLinkClick));
-}
+  // toggle menu
+  $('.menu-btn').click(function () {
+    $('.navbar .menu').toggleClass("active");
+    $('.menu-btn i').toggleClass("active");
+  });
 
-function togglerClick() {
-  navToggler.classList.toggle('toggler-open');
-  navMenu.classList.toggle('open');
-}
-
-function navLinkClick() {
-  if(navMenu.classList.contains('open')) {
-    navToggler.click();
-  }
-}
+});

@@ -612,7 +612,7 @@ footer span a:hover {
         flex: 100%;
     }
 
-    .services .serv-content .card {
+    .projects .projects-content .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }

@@ -222,7 +222,6 @@ section .title::after {
 .home .home-content a:hover {
     background: none;
     background: rgba(100, 255, 218, 0.1);
-    color: #e6f1ff;
 }
 
 /* about */
@@ -272,7 +271,6 @@ section .title::after {
 
 .about .about-content .right a:hover {
     background: rgba(100, 255, 218, 0.1);
-    color: #e6f1ff;
 }
 
 /* skills  */
@@ -365,7 +363,7 @@ section .title::after {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    width:800px;
     margin: 20px auto;
     padding-top: 20px;
     overflow: hidden;
@@ -391,14 +389,16 @@ section .title::after {
 .project-info .row a{
     color:#64ffda;
 }
-
+.project-info .row a:hover{
+  color:#e6f1ff;
+}
 .project-info h1 {
     font-size: 25px;
     font-weight: 500;
 }
 
 .project-info h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     margin-top: 10px;
 }
@@ -561,7 +561,7 @@ footer span a:hover {
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111;
+        background: #0a192f;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;

@@ -369,7 +369,6 @@ section .title::after {
     margin: 20px auto;
     padding-top: 20px;
     overflow: hidden;
-    border-radius: 10px;
 }
 
 .project-info {
@@ -405,7 +404,7 @@ section .title::after {
 }
 
 .project-info p {
-    color: white;
+    color: #ccd6f6;
 }
 
 /* contact */
@@ -450,7 +449,7 @@ section .title::after {
 .contact .message form .textarea textarea {
     height: 100%;
     width: 100%;
-    border: 1px solid lightgrey;
+    border: 1px solid #8892b0;
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
@@ -495,7 +494,8 @@ section .title::after {
 /* footer */
 footer {
     padding: 100px 23px 15px 23px;
-    color: #e6f1ff;
+    font-size: 15px;
+    color: #8892b0;
     text-align: center;
 }
 footer .social {

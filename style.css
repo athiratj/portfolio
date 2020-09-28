@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,700&family=Roboto+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,700&family=Roboto+Mono:wght@400;500&family=Dancing+Script:wght@700&display=swap');
 
 * {
     margin: 0;
@@ -172,12 +172,13 @@ section .title::after {
     display: flex;
     justify-content: center;
     background: url("images/leaf-banner.jpg") no-repeat center;
+    background-color: rgba(2,12,27,0.7);
     height: 100vh;
     color: #e6f1ff;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .home .max-width {
@@ -194,8 +195,9 @@ section .title::after {
 }
 
 .home .home-content .text-2 {
-    font-size: 75px;
-    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    font-weight: 700;
     margin-left: -3px;
 }
 
@@ -251,19 +253,6 @@ section .title::after {
 .about .about-content .left img:hover{
     opacity: 1;
 }
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(100,255,218,0.1);
-  }
 
 .about .about-content .right {
     width: 55%;
@@ -374,8 +363,6 @@ section .title::after {
     width: 50%;
 }
 
-
-
 /* works */
 
 .projects-content {
@@ -482,7 +469,7 @@ section .title::after {
 .contact .message form .textarea textarea {
     height: 100%;
     width: 100%;
-    background-color: #a8b2d1 ;
+    background-color: #ccd6f6 ;
     border: 1px solid #8892b0;
     border-radius: 6px;
     outline: none;
@@ -527,9 +514,11 @@ section .title::after {
 
 /* footer */
 footer {
-    padding: 100px 23px 15px 23px;
+    padding: 60px 23px 15px 23px;
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
+    border-top: 0.25px solid #172a45;
+
     color: #8892b0;
     text-align: center;
 }
@@ -568,6 +557,10 @@ footer span a:hover {
 }
 
 @media (max-width: 1104px) {
+    .about .about-content .left div{
+        height: 350px;
+        width: 350px;
+    }
     .about .about-content .left img {
         height: 350px;
         width: 350px;

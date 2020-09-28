@@ -189,7 +189,7 @@ section .title::after {
 }
 
 .home .home-content .text-1 {
-    font-size: 30px;
+    font-size: 40px;
     color:#ccd6f6;
 }
 
@@ -457,6 +457,7 @@ section .title::after {
 .contact .message form .textarea textarea {
     height: 100%;
     width: 100%;
+    background-color: #a8b2d1 ;
     border: 1px solid #8892b0;
     border-radius: 6px;
     outline: none;
@@ -468,7 +469,7 @@ section .title::after {
 
 .contact .message form .field input:focus,
 .contact .message form .textarea textarea:focus {
-    border-color: #b3b3b3;
+    border-color: #8892b0;
 }
 
 .contact .message form .textarea textarea {

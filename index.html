@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/favicon.ico" />
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar" >
         <div class="max-width">
             <div class="logo"><a href="#"><img src="images/mylogo.png" alt="" height="50px" width="50px"></a></div>
             <ul class="menu">
@@ -33,18 +33,26 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-2"><span class="text-1">I'm</span> Athira.</div>
+                <div class="text-2" data-aos="fade-down" data-aos-duration="3000"><span class="text-1">I'm</span> Athira.</div>
                 <div class="text-3">Front-end Web Developer & Engineer </div>
-                <a href="mailto:athiratjthanaly83@gmail.com">Get In Touch</a>
+                <a href="#contact">Get In Touch</a>
             </div>
         </div>
+        <div class="box">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
     </section>
 
     <!-- about -->
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">ABOUT ME</h2>
-            <div class="about-content">
+            <h2 class="title" data-aos="fade-up" data-aos-duration="1500">ABOUT ME</h2>
+            <div class="about-content" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
                 <div class="column left">
                     <div><img src="images/myimage.jpg" alt="me"></div>
                 </div>
@@ -64,8 +72,11 @@
     <!-- skills -->
     <section class="skills" id="skills">
         <div class="max-width">
-            <h2 class="title">MY SKILLS</h2>
-            <div class="skills-content">
+            <h2 class="title" data-aos="fade-up" data-aos-duration="1500">MY SKILLS</h2>
+            <div class="skills-content" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
                 <div class="column skillsbox">
                     <div class="bars">
                         <div class="info">
@@ -124,10 +135,11 @@
     <!-- works -->
     <section class="projects" id="projects">
             <div class="projects-header">
-                <h1 class="title">MY WORKS</h1>
+                <h1 class="title" data-aos="fade-up" data-aos-duration="1500">MY WORKS</h1>
             </div>
             <div class="projects-content">
-                <div class="project-item">
+                <div class="project-item" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
                     <div class="project-info">
                         <div class="row"><h1>Personal Portfolio</h1>
                             <a href="https://www.athiratj.engineer/"><i class="fas fa-external-link-alt fa-lg"></i></a></div>
@@ -135,7 +147,8 @@
                         <p>This is my very simple personal portfolio website to showcase my small projects and share my skills.</p>
                     </div>
                 </div>
-                <div class="project-item">
+                <div class="project-item" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
                     <div class="project-info">
                         <div class="row"><h1>COVID-19 Tracker App</h1>
                             <a href="https://covid-tracker-008.web.app/"><i class="fas fa-external-link-alt fa-lg"></i></a></div>
@@ -143,7 +156,8 @@
                         <p>A web application for visualizing the up-to-date COVID-19 disease status across the world, making use of disease.sh API.</p>
                     </div>
                 </div>
-                <div class="project-item">
+                <div class="project-item" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
                     <div class="project-info">
                         <div class="row"><h1>Store Locator</h1>
                             <a href="https://athiratj.github.io/live-JS-training-challenge/"><i class="fas fa-external-link-alt fa-lg"></i></a></div>
@@ -151,7 +165,8 @@
                         <p>A Google Maps store locator to find out the stores present in an area. I made use of the Google Maps Simple Store locator documentation to be built.</p>
                     </div>
                 </div>
-                <div class="project-item">
+                <div class="project-item" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
                     <div class="project-info">
                         <div class="row"><h1>Todo List App</h1>
                             <a href="https://athiratj-todolist-app.herokuapp.com/"><i class="fas fa-external-link-alt fa-lg"></i></a></div>
@@ -159,7 +174,8 @@
                         <p>A simple Todo list application is a fun project built using MERN stack, as a part of my full stack development studies.</p>
                     </div>
                 </div>
-                <div class="project-item">
+                <div class="project-item" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
                     <div class="project-info">
                         <div class="row"><h1>Connectr App</h1>
                             <a href="https://github.com/426Coders/Connectr_RookieHacks"><i class="fas fa-external-link-alt fa-lg"></i></a></div>
@@ -167,7 +183,8 @@
                         <p>Connectr is a realtime chatting application built on Ruby on Rails built for Rookie Hacks MLH hackathon.</p>
                     </div>
                 </div>
-                <div class="project-item">
+                <div class="project-item" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
                   <div class="project-info">
                       <div class="row"><h1>Newsletter SignUp</h1>
                           <a href="https://athiratj-newsletter-signup.herokuapp.com/"><i class="fas fa-external-link-alt fa-lg"></i></a></div>
@@ -175,7 +192,8 @@
                       <p>Newsletter SignUp is a project done as a part of a Udemy course. You can sign up for my newsletter here.</p>
                   </div>
               </div>
-              <div class="project-item">
+              <div class="project-item" data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom">
                 <div class="project-info">
                     <div class="row"><h1>Netflix Clone</h1>
                         <a href="https://github.com/athiratj/netflix-clone"><i class="fas fa-external-link-alt fa-lg"></i></a></div>
@@ -189,9 +207,12 @@
     <!-- contact -->
     <section class="contact" id="contact">
         <div class="max-width">
-            <h2 class="title">GET IN TOUCH</h2>
+            <h2 class="title" data-aos="fade-up" data-aos-duration="1500">GET IN TOUCH</h2>
             <div class="contact-content">
-                <div class="column message">
+                <div class="column message" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0">
                     <div class="text">Drop me a line.</div>
                     <form action="#">
                         <div class="fields">
@@ -238,6 +259,7 @@
         <span>Made by <a href="https://www.athiratj.engineer">Athira</a> <i class="far fa-copyright"></i> Copyright 2020 </span>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 

@@ -1,5 +1,7 @@
+AOS.init();
 $(document).ready(function () {
   $(window).scroll(function () {
+
     // sticky navbar
     if (this.scrollY > 20) {
       $('.navbar').addClass("sticky");
@@ -7,10 +9,31 @@ $(document).ready(function () {
       $('.navbar').removeClass("sticky");
     }
   });
-
-  $('.navbar .menu li a').click(function () {
-    // smooth scroll
-    $('html').css("scrollBehavior", "smooth");
+  
+  //smooth scroll
+  $(".navbar .menu li a").on("click", function (e) {
+    if (this.hash !== "") {
+      e.preventDefault();
+      const hash = this.hash;
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top
+        },
+        800
+      );
+    }
+  });
+  $(".home .home-content a").on("click", function (e) {
+    if (this.hash !== "") {
+      e.preventDefault();
+      const hash = this.hash;
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top
+        },
+        1000
+      );
+    }
   });
 
   // toggle menu
@@ -20,3 +43,4 @@ $(document).ready(function () {
   });
 
 });
+

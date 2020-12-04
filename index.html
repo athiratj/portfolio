@@ -35,7 +35,9 @@
             <div class="home-content">
                 <div class="text-2" data-aos="fade-down" data-aos-duration="3000"><span class="text-1">I'm</span> Athira.</div>
                 <div class="text-3">Front-end Web Developer & Engineer </div>
-                <a href="#contact">Get In Touch</a>
+                <a data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="500" href="#contact">Get In Touch</a>
             </div>
         </div>
         <div class="box">
@@ -214,7 +216,7 @@
                 data-aos-delay="300"
                 data-aos-offset="0">
                     <div class="text">Drop me a line.</div>
-                    <form action="#">
+                    <form name="contact" method="POST" data-netlify="true">
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" placeholder="Name" required>

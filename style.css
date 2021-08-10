@@ -231,8 +231,8 @@ section .title::after {
 
 .home .box{
 	position: absolute;
-	top: 80%;
-	left: 51%;
+	top: 82%;
+	left: 90%;
 	transform: translate(-50%, -50%);
 }
 
@@ -364,7 +364,7 @@ section .title::after {
 .skills .skills-content .skillsbox .line {
     height: 10px;
     width: 100%;
-    background: #e6f1ff;
+    background: #bdbebe;
     position: relative;
 }
 

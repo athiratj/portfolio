@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,700&family=Roboto+Mono:wght@400;500&family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,700&family=Roboto+Mono:wght@400;500&family=Montserrat:wght@100;200;400;700&display=swap');
 
 * {
     margin: 0;
@@ -172,7 +172,7 @@ section .title::after {
     display: flex;
     justify-content: center;
     background: url("images/leaf-banner.jpg") no-repeat center;
-    background-color: rgba(2,12,27,0.7);
+    background-color: #0a192f;
     height: 100vh;
     color: #e6f1ff;
     min-height: 500px;
@@ -189,27 +189,18 @@ section .title::after {
     text-align: center;
 }
 
-.home .home-content .text-1 {
-    font-size: 40px;
-    color:#ccd6f6;
-}
-
 .home .home-content .text-2 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
     font-weight: 700;
     margin-left: -3px;
 }
 
 .home .home-content .text-3 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     color:#a8b2d1;
     margin: 5px 0;
-}
-
-.home .home-content .text-3 span {
-    color: #64ffda;
-    font-weight: 500;
 }
 
 .home .home-content a {
@@ -232,14 +223,14 @@ section .title::after {
 .home .box{
 	position: absolute;
 	top: 82%;
-	left: 90%;
+	left: 51%;
 	transform: translate(-50%, -50%);
 }
 
 .home .box span{
 	display: block;
-	width: 20px;
-	height: 20px;
+	width: 15px;
+	height: 15px;
 	border-bottom: 2px solid #e6f1ff;
 	border-right: 2px solid #e6f1ff;
 	transform: rotate(45deg);
@@ -270,7 +261,8 @@ section .title::after {
 		opacity: 0;
 		transform: rotate(45deg) translate(20px, 20px);
 	}
-}
+} 
+  
 /* about */
 
 .about .about-content .left {
@@ -378,11 +370,15 @@ section .title::after {
 }
 
 .skills-content .skillsbox .c::before {
-    width: 85%;
+    width: 75%;
+}
+
+.skills-content .skillsbox .c::before {
+    width: 80%;
 }
 
 .skills-content .skillsbox .html::before {
-    width: 100%;
+    width: 95%;
 }
 
 .skills-content .skillsbox .css::before {

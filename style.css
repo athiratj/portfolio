@@ -369,7 +369,7 @@ section .title::after {
     background: #64ffda;
 }
 
-.skills-content .skillsbox .c::before {
+.skills-content .skillsbox .python::before {
     width: 75%;
 }
 
